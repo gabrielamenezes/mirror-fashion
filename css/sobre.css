@@ -1,0 +1,137 @@
+/*
+PADRÃO E RESET  
+*/
+body {
+    color: #333333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+
+/*
+HEADER 
+*/
+
+.main-header {
+    margin: 0 auto;
+    width: 940px;
+    position: relative;
+}
+.sacola {
+    font-size: 14px;
+    background-image: url(../img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: right center; /* primeiro valor EIXO X e segundo valor EIXO Y*/
+    max-width: 140px;
+    padding-right: 35px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+}
+
+.menu-list {
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.menu-items {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.nav-link {
+    color: #003366;
+}
+
+/*
+CONTEÚDO GERAL
+*/
+
+:not(p) + p::first-line {
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    font-weight: bold;
+}
+
+h1 + p {
+    text-indent: 0;
+}
+.title {
+    background-image: url(../img/sobre-background.jpg);
+    padding: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+figure {
+    background-color: #F2EDED;
+    border: 1px solid #cccccc;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.subtitle {
+    border-bottom: 2px solid #333333;
+    margin-top:30px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.paragraph {
+    padding: 0 45px;
+    text-indent: 15px;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.list-items {
+    line-height: 22px;
+    margin-top: 2px;
+}
+
+ul {
+    margin-top: 10px;
+    list-style: disclosure-closed;
+}
+
+
+/*
+    PIC FAMILIA PELHO
+*/
+#familia-pelho {
+    float: right;
+    margin: 20px 0 10px 10px;
+    /*! margin-top: 20px; */
+}
+
+
+/*
+RODAPÉ
+*/
+
+.rodape {
+    color: #777777;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+.rodape img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}

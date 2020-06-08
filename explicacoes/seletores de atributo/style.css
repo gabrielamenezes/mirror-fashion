@@ -1,0 +1,21 @@
+.social-media {
+    list-style: none;
+}
+
+.link {
+    display: block;
+    background-size: 60px 60px;
+    height: 80px;
+    background-repeat: no-repeat;
+    text-indent: -999px;
+}
+
+[href *="facebook"] {
+    background: url(../img//facebook.png);
+    background-repeat: no-repeat;
+}
+
+[href *="twitter"] {
+    background: url(../img//twitter.png);
+    background-repeat: no-repeat;
+}

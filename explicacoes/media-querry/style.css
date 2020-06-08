@@ -1,0 +1,26 @@
+.cabecalho {
+    height: 100px;
+    background-color: #9b59b6;
+}
+
+.secao {
+    width: 50vw; /* 801+ */
+    float: left;
+    height: 30vh;
+}
+
+.primeiro {
+    background-color: #27ae60;
+
+}
+
+.segundo {
+    background-color: #2980b9;
+}
+/* @media é a entrada de onde o usuário está, screen (tela) é default e pode ser ocultado*/
+/* @media print é para impressão */
+@media (max-width: 800px) {
+    .secao {
+        width: 100vw; /* 800- */
+    }
+}

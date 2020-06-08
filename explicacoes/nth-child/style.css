@@ -1,0 +1,11 @@
+li:nth-child(2n + 1) {
+    /* seleciona os ímpares */
+    color: lightgreen;
+    background-color: lightcoral;
+}
+
+li:last-child {
+    color: lightsalmon;
+    background-color: midnightblue;
+    
+}

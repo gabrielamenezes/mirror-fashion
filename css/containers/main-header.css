@@ -1,0 +1,39 @@
+.main-header {
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+
+.main-header > .logo {
+    width: 150px;
+    margin-bottom: 10px;
+    
+}
+.main-header > .shopping-bag {
+    display: none;
+}
+.main-header .nav-link{
+    display: inline-block;
+    margin: 0 10px 8px;
+    
+}
+
+
+
+@media (min-width:840px) {
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .main-header > .shopping-bag {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 20px;
+    }
+
+    .main-header > .menu {
+        align-self: flex-end;
+    }
+}

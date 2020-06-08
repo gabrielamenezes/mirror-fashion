@@ -1,0 +1,318 @@
+/*
+PADRÕES E RESETS 
+*/
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #333333;
+}
+
+/*
+HEADER
+*/
+
+.container {
+    margin: 0 auto; /* alinha o elemento ao meio se é display: block */
+    width: 940px;
+    position: relative;
+}
+.sacola {
+    font-size: 14px;
+    background-image: url(../img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: right center; /* primeiro valor EIXO X e segundo valor EIXO Y*/
+    max-width: 140px;
+    padding-right: 35px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+}
+
+.menu-items a:hover {
+    color: #007DC6;
+}
+
+.menu-items a:active {
+    color: #867DC6;
+}
+
+.menu-list {
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.menu-items {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.nav-link {
+    color: #003366;
+}
+
+/*
+CONTAINER DESTAQUE
+*/
+.busca, 
+.menu-departamentos {
+    background-color: #DCDCDC;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 10px;
+    width: 230px;
+}
+
+.busca h2, .busca form, .menu-departamentos h2 {
+    margin: 10px;
+}
+
+.destaque {
+    margin-top: 10px;
+}
+.menu-departamentos {
+    clear: left;     /* tem elemento flutuando a minha esquerda? se sim, vá para baixo */
+    margin-top: 10px;
+    padding-bottom: 179px;
+}
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu-departamentos li ul {
+    display: none; /* lista dentro de outra lista sumir */
+}
+
+.menu-departamentos li:hover ul {
+    /* lista dentro de outra lista aparecer quando passa o mouse dentro da li */
+    display: block; 
+}
+
+.menu-departamentos ul ul li {
+    background-color: #DCDCDC;
+}
+
+.menu-departamentos li li a::before {
+    content: '\272A';
+    padding-right: 3px;
+}
+
+.painel h2:before {
+    content: '\2756';
+    padding-right: 5px;
+    opacity: 0.4;
+}
+/* 
+BUSCA
+*/
+.busca button {
+    /* adicionando imagem */
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+
+    /* tamanho da imagem */
+    width: 20px;
+    height: 20px;
+
+    /* image replacement */
+    text-indent: -9999px;
+}
+
+.busca input[type=search] { /* seletor de atributo */
+    width: 170px;
+    border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+/*
+PAINEL DE DESTAQUE E MAIS VENDIDOS
+*/
+
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+    height: auto;
+    border-radius: 4px;
+
+    /* box-shadow com inset adiciona sombra dentro da caixa*/
+    box-shadow: inset 1px 1px 4px #999999;
+}
+
+.painel li {
+    display: inline-block; /* display inline-block para deixar os itens em linha e poder definir um dimensão (altura e largura) para eles */
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+    transition: 0.5s ease-out; 
+    /* .painel li tem animação mesmo quando o mouse está fora do item! quando tira o mouse, a saída é devagar (ease-out) com tempo de 5s */
+}
+.painel li:hover {     /* hover = mouse passa por cima */
+    /* box shadow para elemento da lista ter um shadow com blur quando passar o mouse em cima do item*/
+    box-shadow: 0 0 5px #333333;
+        /* transition para todos os itens da lista terem uma animação em todas as propriedades do hover em 5 segundos  */
+    transition: 0.5s ease-in;
+    background-color: rgba(255,255,255, 0.8);
+
+        /*scale vai aumentar o item em 20% quando o mouse passar por cima e rotate vai rotacionar o item em -5 graus quando o mouse passar por cima */
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.painel li:nth-child(2n):hover {     /* quando o mouse passar por cima de elementos pares da lista*/
+    /* 2n poderia ter sido substituído por even = par em inglês */
+    transform: scale(1.2) rotate(5deg);
+}
+
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 2px rgba(255,255,255, 0.8)
+}
+
+.painel a {
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.novidades {
+    /* o background color serve para navegadores que não suportam o gradiente */
+    background-color: #f5dcdc;
+    float: left;
+    background: linear-gradient(#F5DCDC, #BEBEF4);
+}
+
+.mais-vendidos {
+    /* o background color serve para navegadores que não suportam o gradiente */
+    background-color: #DCDCF5;
+    float: right;
+    background: linear-gradient(#DCDCF5, #F4BEBE);
+}
+
+/*
+FOOTER
+*/
+
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+}
+footer .container {
+    position: relative;
+}
+
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.social li {
+    float: left;
+    margin-left: 25px;
+}
+.social a {
+    /* tamanho da imagem */
+    height: 32px;
+    width: 32px;
+
+    /* image replacement */
+
+    /* setar display block no a para poder definir altura e largura da imagem do replacement */
+    display: block;
+    text-indent: -99999px;
+}
+/* 
+seletores de atributo para image replacement do footer 
+*/
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+    background-image: url(../img/googleplus.png);
+}
+
+@media (max-width: 939px) {   /* para dispotivios com 320px ou menos de largura */
+    /* aqui irão todos os comportamentos para dispositivos mobile */
+    .container {
+        /* mudando o tamanho da tela, para que a página fique mais flexível nos celulares, não ocupando a tela toda, deixando uma margem*/
+        width: 96%;
+    }
+    header > h1 {
+        /* centralizar o logotipo na página*/
+        text-align: center;
+    }
+
+    header h1 img {
+        max-width: 50%;
+    }
+
+    .sacola {
+        /* esconde a sacola*/
+        display: none;
+    }
+
+    .menu-list {
+    /* tirar o menu da direita da pagina e posicioná-lo abaixo do logo*/
+        position: static;
+        text-align: center;
+    }
+
+    .menu-list li {
+        /* deixa a sacola em linha e com um respiro externo */
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .busca,
+    .menu-departamentos,
+    .banner-destaque img {
+        /* renderizando a seção de busca para que ocupem 100% da tela em que estão e não quebram, fiquem apenas um abaixo do outro */
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .painel {
+        width: auto;
+    }
+
+    .painel li {
+        width: 30%;
+    }
+
+    .painel img {
+        /* imagens do painel estão com 100% de 30% da sua largura <li> definiada na linha acima */
+        width: 100%;
+    }
+
+
+}
+
+
+

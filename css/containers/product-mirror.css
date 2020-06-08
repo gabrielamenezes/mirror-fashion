@@ -1,0 +1,66 @@
+.product-mirror {
+    background-color: #f2f2f2;
+    border: 1px solid #cccccc;
+    padding: 20px 0;
+}
+
+.product-mirror > .price {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.product-mirror .price {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.product-mirror .color {
+    text-transform: uppercase;
+}
+
+@media (min-width: 450px) {
+    .product-mirror {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-mirror > .title-mirror {
+        text-align: center;
+    }
+}
+
+@media (min-width: 840px) {
+    .product-mirror {
+        position: relative;
+        display: block;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .product-mirror > .title-mirror {
+        text-align: left;
+        position: absolute;
+        left: 448px;
+    }
+
+    .product-mirror > .price {
+        position: absolute;
+        left: 448px;
+        top: 55px;
+    }
+
+    .product-mirror .button-mirror {
+        position: absolute;
+        max-width: 500px;
+        display: block;
+        left: 448px;
+        bottom: 80px;
+    }
+}
+
+
+@media (min-width: 1262px) {
+    .product-mirror .button-mirror {
+    margin: 0 auto;
+    }
+}

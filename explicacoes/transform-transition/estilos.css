@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #C239B3;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: serif;
+    border-radius: 4px;
+    border: none;
+    /* transition: propriedade que será animada tempo tipo de animação*/
+    transition: transform 0.5s linear,
+                border-radius 0.5s linear,
+                background-color 1s linear; /* se tiver uma mudança na propriedade transform anime ela */
+}
+
+.btn:hover {
+    /* scale é um multiplicador que aumenta ou diminui multiplicando o valor dos () na altura e largura proporcionalmente*/
+    transform: scale(2) rotate(360deg);
+    border-radius: 20px;
+    background-color: salmon;
+    cursor: pointer;
+}
+

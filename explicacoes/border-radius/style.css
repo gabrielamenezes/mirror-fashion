@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.folha {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    transform: rotate(90deg);
+}
+
+
+.quadrada {
+    background-color: rgb(199, 22, 22);
+    border-top-right-radius: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.baixo {
+    background-color: rgb(199, 22, 22);
+    width: 200px;
+    height: 200px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 200px;
+}

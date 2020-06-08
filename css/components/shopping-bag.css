@@ -1,0 +1,9 @@
+.shopping-bag {
+    background-image: url(../../img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-top: 10px;
+    padding-right: 30px;
+    width: 140px;
+    text-align: right;
+}

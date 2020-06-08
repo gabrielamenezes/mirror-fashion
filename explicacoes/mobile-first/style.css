@@ -1,0 +1,26 @@
+/* tudo que atende ao mobile */
+
+.cabecalho {
+    height: 100px;
+    background-color: #9b59b6;
+}
+
+.secao {
+    height: 30vh;
+}
+
+.primeiro {
+    background-color: #27ae60;
+
+}
+
+.segundo {
+    background-color: #2980b9;
+}
+
+@media (min-width: 800px) {  /* tudo que atende a dispositivos maiores ou desktops */
+    .secao {
+        width: 50vw;
+        float: left;
+    }
+}

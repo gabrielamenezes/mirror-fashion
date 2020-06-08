@@ -1,0 +1,79 @@
+/* color-ball:before */
+.color-ball {
+    position: relative;
+    padding-top: 75px;
+}
+.color-ball > .ball::before  {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    top: 5px;
+}
+
+.color-ball > .input-color {
+    display: none;
+}
+
+.color-ball > .ball[for='verde']::before {
+    background-color: #33cc66;
+}
+
+.color-ball > .ball[for='rosa']::before {
+    background-color: rgb(233, 68, 96);
+    left: 70px;
+}
+
+.color-ball > .ball[for='azul']::before {
+    background-color: rgb(117, 18, 184);
+    left: 140px;
+}
+
+.ball > .product-pic {
+    box-sizing: border-box;
+    display: none;
+    width: 100%;
+    max-width: 428px;
+}
+
+.input-color:checked + .ball > .product-pic {
+    display: block;
+}
+
+.color-ball > .input-color:checked + .ball::before {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 450px) {
+    .color-ball .photo {
+        width: 428px;
+    }
+}
+
+@media (min-width: 840px) {
+    .color-ball {
+        padding-top: 0;
+    }
+    .color-ball > .color {
+        position: absolute;
+        left: 448px;
+        margin-top: 130px;
+    }
+
+    .color-ball > .ball::before {
+        position: static;
+        display: inline-block;
+        margin-top: 170px;
+
+    }
+
+    .color-ball .product-pic {
+        float: left;
+        margin-right: 20px;
+    }
+
+}

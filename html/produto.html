@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto da Mirror Fashion</title>
+    <link rel="stylesheet" href="../css/tools/container.css">
+    <link rel="stylesheet" class=".nav-link"href="../css/generic/reset.css">
+    <link rel="stylesheet" class=".nav-link"href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/components/shopping-bag.css">
+    <link rel="stylesheet" href="../css/components/title-mirror.css">
+    <link rel="stylesheet" href="../css/components/button-mirror.css">
+    <link rel="stylesheet" href="../css/components/color-ball.css">
+    <link rel="stylesheet" href="../css/containers/main-header.css">
+    <link rel="stylesheet" href="../css/containers/product-mirror.css">
+    <link rel="stylesheet" href="../css/containers/footer-mirror.css">
+</head>
+<body>
+    <header class="main-header container">
+        <img src="../img/logo.png" alt="Logo da Mirror Fashion" class="logo">
+
+        <p class="shopping-bag">Nenhum item na sacola de compras</p>
+
+        <nav class="menu">
+            <a class="nav-link" href="#">Sua Conta</a>
+            <a class="nav-link" href="#">Lista de Desejos</a>
+            <a class="nav-link" href="#">Cartão Fidelidade</a>
+            <a class="nav-link" href="sobre.html">Sobre</a>
+            <a class="nav-link" href="#">Ajuda</a>
+        </nav>
+    </header>
+
+    <section class="product-mirror container">
+        <h2 class="title-mirror">Camiseta Echo Bad To The Bone</h2>
+        <p class="price">por apenas R$20,90</p>
+
+        <form>
+            <fieldset class="color-ball"> <!--uma seção dentro do formulário-->
+                <legend class="color">Escolha uma cor:</legend> <!--titulo do fieldset-->
+                <!--representação de cores-->
+                <input type="radio" name="color" id="verde" class="input-color" checked>
+                <label class="ball" for="verde">
+                    <img class="product-pic" src="../img/produtos/foto1-verde.png" alt="">
+                </label>
+
+                <input type="radio" name="color" id="rosa" class="input-color">
+                <label  class="ball" for="rosa">
+                    <img class="product-pic" src="../img/produtos/foto1-rosa.png">
+                </label>
+
+                <input type="radio" name="color" id="azul" class="input-color">
+                <label class="ball" for="azul">
+                    <img class="product-pic" src="../img/produtos/foto1-azul.png">
+                </label>
+            </fieldset>
+
+            <fieldset class="tamanhos">
+                <legend>Escolha o tamanho:</legend>
+                <input	type="range"	min="36"	max="46"	value="42"	step="2"	name="tamanho"	id="tamanho">
+            </fieldset>
+
+            <button class="button-mirror">Comprar</button>
+        </form>
+    </section>
+
+
+
+
+
+    <!--RODAPÉ-->
+    <footer class="footer-mirror">
+        <div class="container">
+            <img class="logo" src="../img/logo-rodape.png" alt="Logo da Mirror Fashion">
+
+            <ul class="social">
+                <li><a href="facebook.com/mirrorfashion">Facebook</a></li>
+                <li><a href="twitter.com/mirrorfashion">Twitter</a></li>
+                <li><a href="plus.google.com/mirrorfashion">Google+</a></li>
+            </ul>
+        </div>
+</body>
+</html>
